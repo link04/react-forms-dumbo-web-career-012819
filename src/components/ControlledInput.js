@@ -14,12 +14,9 @@ class ControlledInput extends React.Component {
   render() {
     return (
       <form onSubmit={event => this.handleSubmit(event)}>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+       <input type="text" name="firstName" value={this.state.firstName} />
+      <input type="text" name="lastName" value={this.state.lastName} />
+    </form>
     );
   }
 }
